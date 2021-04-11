@@ -1,4 +1,4 @@
-import { text } from '@fortawesome/fontawesome-svg-core';
+
 import React, { Component } from 'react'
 import { View, Text, FlatList, TouchableHighlight, SectionList, TouchableOpacity, Image, StyleSheet } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler';
@@ -75,7 +75,8 @@ class HomeNews extends Component {
     // console.log(result.length)
     // // con
     return (
-      <View style={{
+      <View>
+              <View style={{
         flex: 1,
         flexDirection: "row"
       }}>
@@ -86,6 +87,7 @@ class HomeNews extends Component {
           marginRight: 6,
           marginLeft: 6
         }}>
+          <Text>HomeNews</Text>
           <FlatList
             showsVerticalScrollIndicator={false}
             horizontal={false}
@@ -145,11 +147,13 @@ class HomeNews extends Component {
         <View style={{
           flex: 0.1
         }}>
-          <ScrollView showsVerticalScrollIndicator={false}>
+          {/* <ScrollView showsVerticalScrollIndicator={false}>
             <Topic />
-          </ScrollView>
+          </ScrollView> */}
         </View>
       </View>
+      </View>
+
     )
   }
 }

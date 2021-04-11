@@ -8,6 +8,8 @@ import Login from '../containers/screens/Login/Login';
 import Register from '../containers/screens/Login/Register';
 import HomeNews from '../containers/screens/Feed/HomeNews'
 import StateNews from '../containers/screens/Feed/StateNews'
+import Topic from '../containers/screens/Topic'
+
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator()
@@ -28,7 +30,7 @@ export default function NavDrawer() {
       <NavigationContainer>
         <Drawer.Navigator>
           <Drawer.Screen name="Stack" component={NavStack} />
-          <Drawer.Screen name="HomeNews" component={HomeNews} />
+           <Drawer.Screen name="HomeNews" component={Topic} />
           <Drawer.Screen name="StateNews" component={StateNews} />
         </Drawer.Navigator>
       </NavigationContainer>

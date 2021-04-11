@@ -38,6 +38,7 @@ class Topic extends React.Component {
             <View>
                 <SafeAreaView>
                     <ScrollView showsVerticalScrollIndicator={false}>
+                        <Text>Topic</Text>
                         <FlatList
                             showsVerticalScrollIndicator={false}
                             horizontal={false}
